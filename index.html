@@ -19,7 +19,7 @@
 <!-- Styles -->
 <link rel="stylesheet" href="/css/reset.css" type="text/css">
 <link rel="stylesheet" href="/css/main.css" type="text/css">
-<link rel="stylesheet" href="/hyperspace-animation/styles.css" type="text/css">
+<link rel="stylesheet" href="/hyperspace-animation/styles1.css" type="text/css" id="styles">
 <link rel="stylesheet" href="/css/cookies.css" type="text/css">
 
 <!-- Footer Social Media Icons Stylesheet -->
@@ -105,7 +105,17 @@
         <div class="wall wall-bottom"></div>   
         <div class="wall wall-back"></div>    
     </div>
-  </div>  
+  </div>
+  
+  <script type="text/javascript" defer>
+    document.addEventListener('keydown', function(event) {
+      if (event.code === 'Space') {
+        let styles = document.getElementById('styles');
+        let href = styles.getAttribute("href").includes("styles1") ? "/hyperspace-animation/styles2.css" : "/hyperspace-animation/styles1.css";
+        styles.setAttribute("href", href);
+      }
+    });
+  </script>
 
 </body>
 </html>

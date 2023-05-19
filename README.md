@@ -6,7 +6,8 @@
 
 
 # Hyperspace Animation
-Auf [https://fab3f.github.io/hyperspace-animation/](https://fab3f.github.io/hyperspace-animation/) findest du eine coole Hyperspace Animation!
+Auf [fab3f.github.io/hyperspace-animation/](https://fab3f.github.io/hyperspace-animation/) findest du eine coole Hyperspace Animation!
+[Credits](https://codepen.io/noahblon)
 
 
 ----------------------------------------------------------------

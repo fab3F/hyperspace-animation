@@ -1,3 +1,8 @@
+.seite{
+  background: url(hyperspace.jpeg);
+  background-size: cover;
+}
+
 html, body{
   height: 100%;
   width: 100%;
@@ -10,7 +15,7 @@ body{
 }
   
 body:before{
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -39,11 +44,6 @@ body:before{
 .wrapper:nth-child(2){
   animation: move 12s infinite linear;
   animation-delay: 6s;
-}
-
-.seite{
-  background: url(hyperspace.jpeg);
-  background-size: cover;
 }
 
 .seite {
@@ -82,7 +82,8 @@ body:before{
 @keyframes move {
   0%{
     transform: translateZ(-500px) rotate(0deg);
-  }100%{
+  }
+  100%{
     transform: translateZ(500px) rotate(0deg);
   }
 }
@@ -90,11 +91,14 @@ body:before{
 @keyframes fade {
   0%{
     opacity: 0;
-  }25% {
+  }
+  25% {
     opacity: 1;
-  }75% {
+  }
+  75% {
     opacity: 1;
-  }100%{
+  }
+  100%{
     opacity: 0;
   }
 }

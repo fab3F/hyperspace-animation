@@ -1,5 +1,5 @@
-.seite{
-  background: url(hyperspace.jpeg);
+.wall{
+  background: url(hyperspace.jpg);
   background-size: cover;
 }
 
@@ -8,12 +8,12 @@ html, body{
   width: 100%;
   overflow: hidden;
 }
-  
+
 body{
   background: #000;
   text-align: center;
 }
-  
+
 body:before{
   content: '';
   display: inline-block;
@@ -21,7 +21,7 @@ body:before{
   vertical-align: middle;
 }
 
-.container{
+.scene{
   display: inline-block;
   vertical-align: middle;
   perspective: 5px;
@@ -29,7 +29,7 @@ body:before{
   position: relative;
 }
 
-.wrapper{
+.wrap{
   position: absolute;
   width: 1000px;
   height: 1000px;
@@ -41,12 +41,12 @@ body:before{
   
 }
 
-.wrapper:nth-child(2){
+.wrap:nth-child(2){
   animation: move 12s infinite linear;
   animation-delay: 6s;
 }
 
-.seite {
+.wall {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -55,27 +55,27 @@ body:before{
   animation-delay: 0;
 }
 
-.wrapper:nth-child(2) .seite {
+.wrap:nth-child(2) .wall {
   animation-delay: 6s;
 }
 
-.seite-right {
+.wall-right {
   transform: rotateY(90deg) translateZ(500px);
 }
 
-.seite-left {
+.wall-left {
   transform: rotateY(-90deg) translateZ(500px);
 }
 
-.seite-top {
+.wall-top {
   transform: rotateX(90deg) translateZ(500px);
 }
 
-.seite-bottom {
+.wall-bottom {
   transform: rotateX(-90deg) translateZ(500px);
 }
 
-.seite-back {
+.wall-back {
   transform: rotateX(180deg) translateZ(500px);
 }
 

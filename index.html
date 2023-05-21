@@ -110,11 +110,28 @@
   <script type="text/javascript" defer>
     document.addEventListener('keydown', function(event) {
       if (event.code === 'Space') {
-        let styles = document.getElementById('styles');
-        let href = styles.getAttribute("href").includes("styles1") ? "/hyperspace-animation/styles2.css" : "/hyperspace-animation/styles1.css";
-        styles.setAttribute("href", href);
+        switch_style();
       }
     });
+    document.addEventListener('click', function(event) {
+      switch_style();
+    });
+
+    function switch_style(){
+      let styles = document.getElementById('styles');
+      let href = "/hyperspace-animation/styles";
+      if(styles.getAttribute("href").includes("styles5")){
+        href += "1.css"
+      } else {
+        var num = styles.getAttribute("href").match(/\d/g);
+        num = parseInt(num) + 1;
+        href = href + num +".css";
+      }
+      console.log(href);
+      styles.setAttribute("href", href);
+    }
+
+
   </script>
 
 </body>

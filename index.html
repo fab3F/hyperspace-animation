@@ -13,32 +13,34 @@
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">  
 
 <!-- Base -->
-<base href="https://fab3F.github.io" target="_self">
-<link rel="manifest" href="/site.webmanifest">
+<base href="https://fab3F.github.io/" target="_self">
+<link rel="manifest" href="site.webmanifest">
 
 <!-- Styles -->
-<link rel="stylesheet" href="/css/reset.css" type="text/css">
-<link rel="stylesheet" href="/css/main.css" type="text/css">
-<link rel="stylesheet" href="/hyperspace-animation/styles1.css" type="text/css" id="styles">
-<link rel="stylesheet" href="/css/cookies.css" type="text/css">
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="hyperspace-animation/styles1.css" type="text/css" id="styles">
+<link rel="stylesheet" href="css/cookies.css" type="text/css">
 
 <!-- Footer Social Media Icons Stylesheet -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="apple-mobile-web-app-title" content="fab3F Homepage">
 <meta name="application-name" content="fab3F Homepage">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#202124">
 	
 <!-- Social Media Stuff -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="fab3F Homepage">
 <meta property="og:title" content="Hyperspace Animation - fab3F Homepage" />
-<meta property="og:url" content="https://fab3F.github.io" />
+<meta property="og:url" content="https://fab3F.github.io/hyperspace-animation/" />
 <meta property="og:description" content="Coole Hyperspace Animation | fab3F Homepage - Hier gibt es viele Projekte, ausgeklügelt programmiert (natürlich) und Links zu weiteren vielen tollen Projekten!" />
 <meta property="og:image" content="/images/fab3F_white.png" />
 <meta name="twitter:site" content="@fab3F_official" />
@@ -46,13 +48,13 @@
 <meta name="twitter:creator" content="@fab3F_official" />
 
 <!-- Script für leere Seite füllen -->
-<script src="/js/space.js" defer></script>
+<script src="js/space.js" defer></script>
 
 <!-- Google Search canonical -->
-<link rel="canonical" href="https://fab3F.github.io/hyperspace-animation" />
+<link rel="canonical" href="https://fab3F.github.io/hyperspace-animation/" />
 
 <!-- Cookies -->
-<script src="/js/cookies.js" defer></script>
+<script src="js/cookies.js" defer></script>
 
 </head>
 
@@ -64,7 +66,7 @@
       <h2>Datenschutzeinstellungen</h2>
       <p>Wir verwenden Cookies und ähnliche Technologien, um sicherzustellen, dass wir Ihnen die bestmögliche Erfahrung auf unserer Website bieten können. Sie können Ihre Einstellungen jederzeit in der Fußzeile ändern. 
         Weitere Informationen dazu finden Sie hier:</p>
-      <p><a href="/idn">Impressum, Datenschutz & Nutzungsbedingungen</a></p>
+      <p><a href="idn">Impressum, Datenschutz & Nutzungsbedingungen</a></p>
       <div class="cookie-button-container">
         <button id="cookie-accept-all">Alle Akzeptieren</button>
         <button id="cookie-reject-all">Alle Ablehnen</button>
@@ -119,7 +121,7 @@
 
     function switch_style(){
       let styles = document.getElementById('styles');
-      let href = "/hyperspace-animation/styles";
+      let href = "hyperspace-animation/styles";
       if(styles.getAttribute("href").includes("styles5")){
         href += "1.css"
       } else {
